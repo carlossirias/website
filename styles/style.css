@@ -476,12 +476,26 @@ header
     align-items: center;
 }
 
+.parr__text__about
+{
+    margin-bottom: 30px;
+}
+
 .line__about__me
 {
     background-color: #1C5D99;
     border-radius: 40px;
     border-style: none;
     height: 5px;
+    margin-left: 50%;
+    width: 0;
+}
+
+.mostrar
+{
+    transition: 1s ease;
+    margin-left: 0%;
+    width: 100%;
 }
 
 .image__about__me
@@ -585,6 +599,7 @@ header
 
     .parr__text__about
     {
+        margin-bottom: 0px;
         font-size: 1.1rem;
     }
 
@@ -600,6 +615,21 @@ header
     }
 
 }
+
+@media (max-height:850px) {
+
+    .principal__text__about
+    {
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .line__jump
+    {
+        height: 10px;
+        display: none;
+    }
+}
+
 
 @media (max-height:780px) {
     .parr__text__about
@@ -625,6 +655,8 @@ header
     {
         margin-top: 15px;
     }
+
+    
 }
 
 
